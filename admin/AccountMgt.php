@@ -21,20 +21,24 @@
 <main>
 <!--Start:Table-->
 <div class="container mx-auto p-5">
-  <h1 class="text-2xl font-bold mb-5">CRUD Table with Search</h1>
+   <div class="flex justify-between">
+     <div class="flex justify-center items-center">
+     <label class="flex px-4 py-2 text-3xl font-bold" >ALL Users</label>
+     <span class="flex" >0</span>
+     </div>
+     <button id="open-popup-btn" class="flex justify-center items-center mb-5  bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800">
+         <span class="mr-2" ><img width="20" height="20" src="https://img.icons8.com/android/20/FFFFFF/plus.png" alt="plus"/></span>
+         <span class="font-semibold text-lg" >Add New User</span>
+    </button>
+   </div>
 
-  <input type="text" id="search" placeholder="Search..." class="mb-5 p-2 border border-gray-300 rounded">
-
-  <button id="openModal" class="mb-5 bg-blue-500 text-white px-4 py-2 rounded">Add Entry</button>
-
-  <table class="min-w-full bg-white border border-gray-300">
-      <thead>
+  <table class="w-full bg-white border border-gray-300">
+      <thead class="bg-blue-500">
           <tr>
-              <th class="border px-4 py-2">ID</th>
-              <th class="border px-4 py-2">Person Name</th>
-              <th class="border px-4 py-2">Pet Name</th>
-              <th class="border px-4 py-2">Phone</th>
-              <th class="border px-4 py-2">Actions</th>
+              <th class="text-white px-4 py-2">Username</th>
+              <th class="text-white px-4 py-2">Email</th>
+              <th class="text-white px-4 py-2">Role</th>
+              <th class="text-white px-4 py-2">Actions</th>
           </tr>
       </thead>
       <tbody id="table-body">
@@ -50,19 +54,10 @@
   </div> 
  
   <!--Modal-->
-  <div id="modal" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-    <div class="bg-white p-5 rounded shadow-lg w-96">
-        <h2 class="text-xl font-bold mb-4" id="modal-title">Add Entry</h2>
-        <input type="hidden" id="entry-id">
-        <input type="text" id="entry-name" placeholder="Person Name" class="mb-4 p-2 border border-gray-300 rounded w-full">
-        <input type="text" id="entry-pet" placeholder="Pet Name" class="mb-4 p-2 border border-gray-300 rounded w-full">
-        <input type="tel" id="entry-phone" placeholder="Phone" class="mb-4 p-2 border border-gray-300 rounded w-full">
-        <div class="flex justify-end">
-            <button id="saveBtn" class="bg-green-500 text-white px-4 py-2 rounded">Save</button>
-            <button id="closeModal" class="ml-2 bg-red-500 text-white px-4 py-2 rounded">Close</button>
-        </div>
-    </div>
+  <?php
+   include("addUser.php");
+  ?>
 </div>
-<script src="js/script.js"></script>
+<script src="js/script.js"></script> 
 </body>
 </html>
