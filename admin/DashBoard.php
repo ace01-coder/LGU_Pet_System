@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barangay</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <scrip src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body class="bg-gray-100">
@@ -113,8 +113,8 @@
  </div>  
   </div> 
  
-<script src="js/script.js">
-</script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
 
