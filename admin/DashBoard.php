@@ -10,58 +10,13 @@
 <body class="bg-gray-100">
   <div class="flex ">
     <!--Start:Sidebar-->
-    <div id="sidebar" class=" bg-blue-600 text-white w-64 h-screen p-5 space-y-5 transition-all duration-300">
-      <div class="flex justify-center items-center">
-        <img width="100" height=""  src="img/logo.png" alt="">
-      </div>
-      <span></span>
-      <hr>
-      <ul class="">
-        <li class="flex mb-6 items-center space-x-3 space-y-3">
-         <a class="flex items-center space-x-6 hover:bg-PictonBlue" href="DashBoard.php">
-          <img width="39" height="39" src="https://img.icons8.com/ios/39/FFFFFF/dashboard.png" alt="dashboard"/>
-          <span class="sidebar-text">DASHBOARD</span>
-         </a>
-        </li>
-        <li class="flex mb-6 items-center space-x-3 space-y-3">
-         <a class="flex items-center space-x-6 " href="Registered.php">
-      <img width="40" height="40" src="https://img.icons8.com/ios/40/FFFFFF/registered-trademark.png" alt="registered-trademark"/>
-          <span class="sidebar-text">REGISTERED MANAGEMENT</span>
-         </a>
-        </li>
-        <li class="flex mb-6 items-center space-x-3 space-y-3">
-          <a class="flex items-center space-x-6 " href="ReportList.php">
-            <img width="40" height="40" src="https://img.icons8.com/ios/40/FFFFFF/graph-report.png" alt="graph-report"/>
-          <span class="sidebar-text">REPORT MANAGEMENT</span>
-          </a>
-        </li>
-        <li class="flex mb-6 items-center space-x-3 space-y-3">
-      <a class="flex items-center space-x-6 " href="AdoptionMgt.php">
-         <img width="40" height="40" src="https://img.icons8.com/ios-filled/40/FFFFFF/cat-footprint.png" alt="cat-footprint"/>
-          <span class="sidebar-text">ADOPTION MANAGEMENT</span>
-      </a>
-        </li>
-        <li class="flex mb-6 items-center space-x-3 space-y-3">
-          <a class="flex items-center space-x-6 " href="AccountMgt.php">
-            <img width="40" height="40" src="https://img.icons8.com/ios/40/FFFFFF/guest-male.png" alt="guest-male"/>
-            <span class="sidebar-text">ACCOUNT MANAGEMENT</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <?php
+     include("sidebar.html");
+    ?>
     <!--End:Sidebar-->
-    <!--Start:Navbar-->
- <div class="flex flex-col w-full h-full  ">
-  <nav class="flex m-2 p-4 text-white rounded-md justify-between bg-blue-600">
-      <button id="toggleSidebar" class="">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button> 
-          <div class="flex items-center space-x-3">
-            <img width="30" height="30" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/50/FFFFFF/external-user-web-and-seo-tanah-basah-basic-outline-tanah-basah.png" alt="external-user-web-and-seo-tanah-basah-basic-outline-tanah-basah"/>
-          </div>
-</nav> 
+    <?php 
+    include("navbar.html");
+ ?>
 <!--End:Navbar-->
 <!--Start:Main-->
 <main>
