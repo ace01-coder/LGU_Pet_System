@@ -17,28 +17,25 @@
  <div class="">
  <div class="bg-white p-32 border-r border-t border-b border-gray-600 rounded-r-lg shadowlg">
 
-    <form action="db/login.php" method="post">
+    <form action="../db_login.php" method="post">
     
-    <?php if (isset($_GET['error'])) { ?>
-     		<span class="error"><?php echo $_GET['error']; ?></span>
-     	<?php } ?>
      
       <div class="flex items-center mb-4">
         <i class="fas fa-user text-gray-500 mr-2"></i>
-        <input type="text" id="uname" name="uname" class="w-full p-2 pl-10 border border-gray-300 rounded-lg" placeholder="Username" required>
+        <input type="text"  name="uname" class="w-full p-2 pl-10 border border-gray-300 rounded-lg" placeholder="Username" required>
       </div>
      
       <div class="flex items-center mb-4">
         <i class="fas fa-lock text-gray-500 mr-2"></i>
-        <input type="password" id="pass" name="pass" class="w-full p-2 pl-10 border border-gray-300 rounded-lg" placeholder="Password">
+        <input type="password"  name="pwd" class="w-full p-2 pl-10 border border-gray-300 rounded-lg" placeholder="Password">
       </div>
      
       <div class="flex items-center mb-4">
-        <input type="checkbox" id="remember" name="remember" class="mr-2">
+        <input type="checkbox"  name="remember" class="mr-2">
         <label for="remember" class="text-gray-600">Remember me</label>
       </div>
      
-      <input type="submit" value="Login" class="bg-blue-500 hover:bg-blue-900 text-white font-bold  p-2 w-full rounded-lg">
+      <input type="submit" name="login_submit" value="Login" class="bg-blue-500 hover:bg-blue-900 text-white font-bold  p-2 w-full rounded-lg">
     </form>
 
   </div>

@@ -149,7 +149,7 @@
   searchInput.oninput = updateTable;
  
 
- /* const slider = document.getElementById('slider');
+ const slider = document.getElementById('slider');
 const slides = slider.getElementsByClassName('slide');
 let currentIndex = 0;
 
@@ -173,4 +173,4 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 });
 
 // Show the first slide initially
-showSlide(currentIndex);*/
+showSlide(currentIndex);
