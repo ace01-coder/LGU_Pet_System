@@ -8,17 +8,13 @@
 </head>
 <body class="bg-gray-100 ">
   <div class="flex ">
-    <!--Start:Sidebar-->
-       <!--Start:Sidebar-->
-       <?php
-     include("sidebar.html");
-    ?>
-    <!--End:Sidebar-->
-    <?php 
-    include("navbar.html");
- ?>
-<!--End:Navbar-->
-<!--Start:Main-->
+          <!--Start:Sidebar-->
+          <?php
+          //sidebar 
+     include("disc/sidebar.php");
+     //navbar
+     include("disc/navbar.php");
+     ?>
 <main>
 <!--Start:Table-->
 <div class="container mx-auto p-5">

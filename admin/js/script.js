@@ -1,4 +1,5 @@
 //start:sidebar
+
  //Sidebar functions
   const sidebar = document.getElementById('sidebar');
   const toggleSidebar = document.getElementById('toggleSidebar');

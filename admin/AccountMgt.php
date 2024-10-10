@@ -8,56 +8,54 @@
 </head>
 <body class="bg-gray-100 ">
   <div class="flex ">
-       <!--Start:Sidebar-->
-       <?php
-     include("sidebar.html");
-    ?>
-    <!--End:Sidebar-->
-    <?php 
-    include("navbar.html");
- ?>
-<!--End:Navbar-->
-<!--Start:Main-->
-<main>
-<!--Start:Table-->
-<div class="container mx-auto p-5">
-   <div class="flex justify-between">
-     <div class="flex justify-center items-center">
-     <label class="flex px-4 py-2 text-3xl font-bold" >ALL Users</label>
-     <span class="flex" >0</span>
-     </div>
-     <button id="open-popup-btn" class="flex justify-center items-center mb-5  bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800">
-         <span class="mr-2" ><img width="20" height="20" src="https://img.icons8.com/android/20/FFFFFF/plus.png" alt="plus"/></span>
-         <span class="font-semibold text-lg" >Add New User</span>
-    </button>
-   </div>
-
-  <table class="w-full bg-white border border-gray-300">
-      <thead class="bg-blue-500">
-          <tr>
-              <th class="text-white px-4 py-2">Username</th>
-              <th class="text-white px-4 py-2">Email</th>
-              <th class="text-white px-4 py-2">Role</th>
-              <th class="text-white px-4 py-2">Actions</th>
-          </tr>
-      </thead>
-      <tbody id="table-body">
-          <!-- Rows will be dynamically added here -->
-      </tbody>
-  </table>
-</div>
-    </div>
-    <!--End:Table-->
-</main>
-<!--End:Main-->
- </div>  
-  </div> 
- 
-  <!--Modal-->
   <?php
-   include("addUser.php");
-  ?>
+     //sidebar 
+     include("disc/sidebar.php");
+     //navbar
+     include("disc/navbar.php");
+ ?>
+<section class="grid grid-cols p-2 bg-blue-800">
+<div class="bg-white">
+<div class="bg-green-600">
+<h2 class="text-2xl font-bold p-2">Create a user account</h2>
 </div>
+<div class="">
+
+    <div class="p-10">
+          <!--form-->
+        <form action="dbAddUser.php" method="post">
+               <div class="m-4">
+               <label for="username">Username</label>
+               <input  class="border px-12" type="text" name="uname">
+               </div>
+                <div class="m-4">
+                    <label for="mail">E-mail</label>
+                    <input  class="border px-12" type="text" name="mail">
+                </div>
+                <div class="m-4">
+                    <label for="password">Password</label>
+                    <input  class="border px-12" type="password" name="pass">
+                </div>
+                <div class="m-4">
+                    <label for="password">Confirm Password</label>
+                    <input  class="border px-12" type="password" name="rpass">
+                </div>
+            </div>
+            <div class="">
+                <button type="submit" name="btn-ruser">
+                    add user
+                </button>
+            </div>
+        </form>
+    
+    </div>
+
+</div>
+</section>
+
+
+</div>
+
 <script src="js/script.js"></script> 
 </body>
 </html>

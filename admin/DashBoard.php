@@ -9,13 +9,12 @@
 </head>
 <body class="bg-gray-100">
   <div class="flex ">
-    <!--Start:Sidebar-->
-    <?php
-     include("sidebar.html");
-    ?>
-    <!--End:Sidebar-->
-    <?php 
-    include("navbar.html");
+        <!--Start:Sidebar-->
+        <?php
+    //sidebar 
+    include("disc/sidebar.php");
+    //navbar
+    include("disc/navbar.php");
  ?>
 <!--End:Navbar-->
 <!--Start:Main-->
