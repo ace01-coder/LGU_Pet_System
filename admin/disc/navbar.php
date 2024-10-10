@@ -6,7 +6,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button> 
-            <div class="flex items-center space-x-3">
+            
+            <div class="flex items-center space-x-3" >
+              <a href="logout.php"><span>User</span></a>
               <img width="30" height="30" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/50/FFFFFF/external-user-web-and-seo-tanah-basah-basic-outline-tanah-basah.png" alt="external-user-web-and-seo-tanah-basah-basic-outline-tanah-basah"/>
             </div>
   </nav> 

@@ -23,7 +23,7 @@
 
     <div class="p-10">
           <!--form-->
-        <form action="dbAddUser.php" method="post">
+        <form action="account_add_pg.php" method="post">
                <div class="m-4">
                <label for="username">Username</label>
                <input  class="border px-12" type="text" name="uname">
